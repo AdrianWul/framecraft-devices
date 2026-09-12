@@ -12,6 +12,7 @@ Special thanks to **Jordan Jimenez**
 - Independent screen flip, rotation, fit, and scale adjustments.
 - Camera, lighting, transform, and depth-of-field animation.
 - Movable and resizable timeline clips and grouped keyframes.
+- Per-transition easing presets and center snapping guides for camera positioning.
 - Responsive controls with a categorized, animated mobile workspace that keeps the canvas visible.
 - Seven-step interactive tutorial covering setup, media, mockups, timeline animation, and export.
 - Image export plus WebM and browser-supported MP4 video export at 30 or 60 FPS.
