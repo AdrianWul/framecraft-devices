@@ -58,7 +58,8 @@ threshold; long-GOP source videos may still require decoding time.
 ### Shots, screen scaling, and resets
 
 Hover a shot card (or swipe left on touch) to reveal its delete button; deletion
-requires a click/tap on the trash icon. Hold the shot name for 350 ms to drag it
+requires a click/tap on the trash icon. The red SVG animates once per hover entry,
+without looping, and respects reduced motion. Hold the shot name for 150 ms to drag it
 up/down. Neighboring rows move aside and a dashed line marks the destination.
 Release to reorder, or Escape to cancel. With the keyboard, Space lifts the shot,
 Up/Down move it, and Enter/Space drops it. Duration is edited separately at the right.
