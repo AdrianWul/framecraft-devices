@@ -9,6 +9,7 @@ Special thanks to **Jordan Jimenez**
 
 - Real-time 3D device composition and camera controls.
 - Image and video playback on device screens.
+- Buffered video readiness feedback, drift correction without continuous seeking, and export preroll.
 - Independent screen flip, rotation, fit, and scale adjustments.
 - Camera, lighting, transform, and depth-of-field animation.
 - Camera Rotate X control from -85° to 85° for dramatic but stable overhead and underside angles.
@@ -19,6 +20,7 @@ Special thanks to **Jordan Jimenez**
 - Seven-step interactive tutorial covering setup, media, mockups, timeline animation, and export.
 - Pink-to-magenta animated stroke treatment on the Tutorial button.
 - Image export plus WebM and browser-supported MP4 video export at 30 or 60 FPS.
+- Reused export rendering buffers reduce dropped frames during high-resolution video capture.
 - Portable `.framecraft.json` project save files with embedded media.
 
 ## Using the editor
