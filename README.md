@@ -13,6 +13,7 @@ Special thanks to **Jordan Jimenez**
 - Camera, lighting, transform, and depth-of-field animation.
 - Movable and resizable timeline clips and grouped keyframes.
 - Responsive controls with a categorized bottom toolbar and persistent keyframe recording access.
+- Seven-step interactive tutorial covering setup, media, mockups, timeline animation, and export.
 - Image and WebM export.
 - Portable `.framecraft.json` project save files with embedded media.
 
