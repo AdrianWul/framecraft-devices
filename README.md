@@ -76,6 +76,11 @@ Mockup also includes iPhone 18 Pro Max and MacBook Pro, with bundled GLB assets,
 source fitting, video support, and opt-in housing color. MacBook media replaces
 only its display, preserving the original keyboard, bezel, and camera notch.
 HDR reflections are prepared outside model drawing and kept independent per shot.
+The timeline supports rectangle selection and moving multiple keyframes together.
+Shift/Ctrl/Cmd-click toggles selection, Delete removes it, and Escape cancels a drag.
+Keys retain their spacing and easing and cannot overwrite unselected neighbors.
+The magnet toggles playhead snapping to keyframes (off by default); keyboard seeking
+remains precise. Retimed keys are included in saved projects and exports.
 Model attributions live in the Model credits link below the inspector.
 Keep `device-credits.html` alongside the other site files.
 Import media from Source and choose presets through Auto-motion; the duplicate
