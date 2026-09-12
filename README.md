@@ -57,6 +57,18 @@ threshold; long-GOP source videos may still require decoding time.
 
 ### Shots, screen scaling, and resets
 
+The keyboard icon next to Tutorial opens the liquid-glass Shortcuts popup.
+Ctrl/Cmd+S exports an image; the save icon downloads project JSON. Beside that desktop
+icon, "Don't forget to save" appears after 60 seconds for 6 seconds, then every
+10 minutes. Its overshoot and violet-pink-cyan glow respect reduced motion.
+
+Depth of field has animated focus position/size and a canvas editor for moving,
+resizing, or redrawing the rectangle/oval. Tilt blur is an independent effect with
+movable, resizable, rotatable lines and its own keyframe lane. Bokeh adds an optional
+shaped aperture with intensity and circle/pentagon/hexagon controls. These screen-space
+effects remain shot-local, save with the project, and render without editing guides.
+Old files retain their prior DOF; new tilt and bokeh options start disabled.
+
 Reveal the left gear on a source card to edit its own fit, flip/rotation, and
 screen scale. Primary and secondary screens are independent per shot/device;
 older shared settings migrate without changing their initial appearance.
