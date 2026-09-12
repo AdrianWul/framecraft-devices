@@ -57,6 +57,12 @@ threshold; long-GOP source videos may still require decoding time.
 
 ### Shots, screen scaling, and resets
 
+Hover a shot card (or swipe left on touch) to reveal its delete button; deletion
+requires a click/tap on the trash icon. Hold the shot name for 350 ms to drag it
+up/down. Neighboring rows move aside and a dashed line marks the destination.
+Release to reorder, or Escape to cancel. With the keyboard, Space lifts the shot,
+Up/Down move it, and Enter/Space drops it. Duration is edited separately at the right.
+
 Screen scale can link X/Y (Uniform) or adjust each axis separately (Non-uniform).
 Each slider has a reset icon next to its value. Camera, Transform, Appearance,
 Lighting, and Depth of field also have Reset All for their sliders.
