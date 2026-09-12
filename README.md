@@ -19,7 +19,13 @@ Special thanks to **Jordan Jimenez**
 - Seven-step interactive tutorial covering setup, media, mockups, timeline animation, and export.
 - Pink-to-magenta animated stroke treatment on the Tutorial button.
 - Image export plus WebM video export at 30 FPS, with 60 FPS enabled only for detected 60 FPS sources.
-- Visible render progress during WebM video capture.
+- Frame-by-frame WebM rendering with fixed timestamps, completed-frame progress, and cancellation.
+- Coalesced, precise paused-video scrubbing and new-frame-only screen texture updates.
+- Independent shot scenes and local keyframes, with real cuts and crossfades in preview and export.
+- Desktop inspector accordions; unchanged mobile category navigation.
+- Compact linked/independent screen scaling, individual slider resets, and per-section Reset All.
+- One shared WebGL renderer across shots, with context-loss notification and preview recovery.
+- Geometry-aware iPhone Duo screen fitting and isolated device housing finish materials.
 - Portable `.framecraft.json` project save files with embedded media.
 
 ## Using the editor
@@ -35,6 +41,34 @@ Special thanks to **Jordan Jimenez**
 6. Use the save icon to download a `.framecraft.json` project that can be opened
    again later.
 7. Use Export to render an image or WebM animation.
+
+### Video playback and export
+
+Video export requires WebCodecs (use current Chrome or Edge over HTTPS or
+localhost). Frames are decoded and rendered individually rather than captured
+in real time; slower rendering does not skip output timestamps. Progress counts
+completed frames, with finalization before download. Cancel render or Escape
+restores the paused playhead without downloading a partial file.
+
+Exports remain silent WebM: 30 FPS by default, or 60 FPS for detected 59.94/60 FPS
+sources. Both videos must qualify in dual-video compositions. MP4 is import-only.
+Paused scrubbing uses the latest requested position without the old 120 ms
+threshold; long-GOP source videos may still require decoding time.
+
+### Shots, screen scaling, and resets
+
+Screen scale can link X/Y (Uniform) or adjust each axis separately (Non-uniform).
+Each slider has a reset icon next to its value. Camera, Transform, Appearance,
+Lighting, and Depth of field also have Reset All for their sliders.
+Animated resets pause playback and add or update a default-value keyframe at the
+current shot-local time, preserving other keys and existing easing. Unanimated
+controls return to their base defaults without adding keys unless recording.
+Reset All leaves the device finish, HDR, focus shape, and other shots unchanged.
+
+Projects now save as version 2 with all shot scenes and embedded media.
+Version 1 files are migrated on load. Moving a shot carries its local keyframes;
+each outgoing shot's transition button selects a cut or a half-second dissolve
+at the next shot's start without shortening either shot.
 
 ## Development
 
