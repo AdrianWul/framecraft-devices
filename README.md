@@ -57,6 +57,31 @@ threshold; long-GOP source videos may still require decoding time.
 
 ### Shots, screen scaling, and resets
 
+Reveal the left gear on a source card to edit its own fit, flip/rotation, and
+screen scale. Primary and secondary screens are independent per shot/device;
+older shared settings migrate without changing their initial appearance.
+
+Effects opens in the right inspector; Devices restores the device controls.
+Import media from Source and choose presets through Auto-motion; the duplicate
+Media and Presets buttons have been removed.
+The grid button beside Effects toggles the resolution badge and movement hints.
+Effects contains a card stack with Bloom and Depth of field (moved from
+the inspector). Use + to add an effect; each card has enable/disable, removal,
+collapse, and reset controls. Removal preserves its values/keyframes for re-adding.
+Bloom starts at Strength 0.54, Threshold 0.24, Radius 0.24 and is off until added.
+
+Trim edges have larger hit targets and animated hover highlights. Crossfade is
+inset inside the clip, away from its trim edges, including on short clips.
+Select the small icon between keyframes to edit cubic Bezier easing using two draggable
+pivots or x1, y1, x2, y2 (0-1, maximum two decimals). Curves are saved per interval
+and used in preview/export; older easing is preserved until edited.
+
+NEW UPDATES groups changes into Interface, Control, Canvas, and Timeline sections,
+including effects, device colors, and cubic Bezier easing.
+It reappears on refresh unless "Don't show again for this update" is
+checked. That preference applies only to the current release. The purple/cyan
+Updates button beside Tutorial reopens the list at any time.
+
 Hover a shot card (or swipe left on touch) to reveal its delete button; deletion
 requires a click/tap on the trash icon. The red SVG animates once per hover entry,
 without looping, and respects reduced motion. Hold the shot name for 150 ms to drag it
