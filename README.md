@@ -1,27 +1,86 @@
-# Framecraft Devices
+# Framecraft
 
-Versioned 3D device assets used by Framecraft.
+Browser-based 3D device animation editor built with React, Three.js, and Vite.
 
-## Public asset URLs
+Created by **Adrian Wulfrath**  
+Special thanks to **Jordan Jimenez**
 
-GitHub Pages base URL:
+## Features
 
-`https://adrianwul.github.io/framecraft-devices/`
+- Real-time 3D device composition and camera controls.
+- Image and video playback on device screens.
+- Independent screen flip, rotation, fit, and scale adjustments.
+- Camera, lighting, transform, and depth-of-field animation.
+- Movable and resizable timeline clips and grouped keyframes.
+- Image and WebM export.
+- Portable `.framecraft.json` project save files with embedded media.
 
-Each device is stored under `devices/<device-id>/`. The library metadata is
-available in [`manifest.json`](./manifest.json).
+## Using the editor
 
-## Adding a device
+1. Select a device from the Mockup section.
+2. Load a PNG, JPG, WebP, MP4, or WebM file.
+3. Adjust the screen orientation with Flip H, Flip V, Rotate, and Screen Scale.
+4. Position the camera by dragging the canvas, using Space + drag to pan, and
+   scrolling to zoom.
+5. Add keyframes from the inspector or the Camera, Lighting, and Depth of field
+   lanes in the timeline.
+6. Use the save icon to download a `.framecraft.json` project that can be opened
+   again later.
+7. Use Export to render an image or WebM animation.
 
-1. Add the source glTF package locally.
-2. Optimize it to `devices/<device-id>/scene.glb` and keep the original
-   `license.txt` beside it. GLB keeps geometry and textures in one web-ready file.
-3. Add the device metadata and screen material name to `manifest.json`.
-4. Preserve the required attribution and confirm that the license permits the
-   intended use.
+## Development
 
-## Licensing
+```powershell
+npm install
+npm run dev
+```
 
-Every device retains its original `license.txt`. The iPad Pro and iPhone Duo
-assets are licensed for non-commercial use only. See the individual folders
-and `manifest.json` before publishing or monetizing a project that uses them.
+## Production build
+
+```powershell
+npm run build
+```
+
+Publish the complete `dist` directory to GitHub Pages, Netlify, Cloudflare
+Pages, Vercel, or another static HTTP host. No database or application server
+is required.
+
+The production build uses a standalone `index.html` with its JavaScript and CSS
+embedded. The ready-to-upload files are also copied to `UPLOAD_TO_WEB`.
+
+## Device library
+
+Framecraft loads its production GLB assets from:
+
+<https://adrianwul.github.io/framecraft-devices/>
+
+Repository:
+
+<https://github.com/AdrianWul/framecraft-devices>
+
+The URL can be replaced at build time:
+
+```powershell
+$env:VITE_DEVICE_LIBRARY_URL = 'https://example.com/devices/'
+npm run build
+```
+
+Each model keeps its original attribution and license in the device repository.
+Some included models prohibit commercial use.
+
+### Adding another device
+
+1. Export or optimize the model as a self-contained `scene.glb`.
+2. Create `devices/<device-id>/` in the device repository.
+3. Add `scene.glb` and the original `license.txt`.
+4. Add its URL, screen material name, author, source, and license to
+   `manifest.json`.
+5. Register the device and its display transform in Framecraft. The screen mesh
+   must have an identifiable material so the editor can replace its texture.
+
+## Credits
+
+- Design and development: [Adrian Wulfrath](https://github.com/AdrianWul)
+- Special thanks: Jordan Jimenez
+- 3D device authors and licenses are credited in the application and in the
+  [device library](https://github.com/AdrianWul/framecraft-devices).
