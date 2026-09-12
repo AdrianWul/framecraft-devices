@@ -11,6 +11,7 @@ Special thanks to **Jordan Jimenez**
 - Image and video playback on device screens.
 - Independent screen flip, rotation, fit, and scale adjustments.
 - Camera, lighting, transform, and depth-of-field animation.
+- Extended Camera Rotate X control up to ±120° for more dramatic overhead and underside angles.
 - Movable and resizable timeline clips with an expandable Transform track for
   individually selectable and retimeable property keyframes.
 - Per-transition easing presets and soft, easy-release center snapping guides for camera positioning.
