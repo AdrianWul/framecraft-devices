@@ -60,8 +60,20 @@ threshold; long-GOP source videos may still require decoding time.
 Reveal the left gear on a source card to edit its own fit, flip/rotation, and
 screen scale. Primary and secondary screens are independent per shot/device;
 older shared settings migrate without changing their initial appearance.
+Empty screens use the supplied landscape image, embedded in `index.html`.
+It respects each screen's Fit/Fill setting and never replaces imported media.
 
 Effects opens in the right inspector; Devices restores the device controls.
+Click the toolbar Effects icon again to return to Devices.
+Camera keeps Distance and Zoom; FOV is no longer a visible slider. Existing
+project FOV values/keyframes are preserved, including by camera slider resets.
+Device color is opt-in for new scenes. Its toggle restores original shader colors
+when off and remembers the custom selection. Older projects keep their prior colors.
+The Mockup picker changes the device for every shot while retaining independent
+sources, camera, animation, colors, and effects. Older mixed-device projects ask
+before being converted to one device; cancelling leaves the current project intact.
+Model attributions live in the Model credits link below the inspector.
+Keep `device-credits.html` alongside the other site files.
 Import media from Source and choose presets through Auto-motion; the duplicate
 Media and Presets buttons have been removed.
 The grid button beside Effects toggles the resolution badge and movement hints.
@@ -69,6 +81,18 @@ Effects contains a card stack with Bloom and Depth of field (moved from
 the inspector). Use + to add an effect; each card has enable/disable, removal,
 collapse, and reset controls. Removal preserves its values/keyframes for re-adding.
 Bloom starts at Strength 0.54, Threshold 0.24, Radius 0.24 and is off until added.
+
+Choose iPhone Duo 2 (marked with a clapperboard) in Mockup to scrub its open-close clip with Animation frame
+(0-60). Record keyframes on the Mockup track; easing, resets, trim/reorder,
+project save/load, PNG, and WebM retain the same shot-local animation.
+Primary edits the inner screen; secondary edits the outer screen.
+The bundled `devices` folder must remain alongside `index.html`.
+
+The Fold model is [Apple iPhone Duo Fold Star White 2026 (Animated)](https://sketchfab.com/3d-models/apple-iphone-duo-fold-star-white-2026-animated-240492141edd4594ae13082a7fcbbb29)
+by [extraakash](https://sketchfab.com/AakashMansukhani).
+On September 12, 2026, the project owner confirmed express author permission
+for public GitHub hosting and distribution with this site. The original
+Sketchfab Standard metadata is retained; the asset is not generally relicensed.
 
 Trim edges have larger hit targets and animated hover highlights. Crossfade is
 inset inside the clip, away from its trim edges, including on short clips.

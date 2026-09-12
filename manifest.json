@@ -23,6 +23,18 @@
       "commercialUse": false
     },
     {
+      "id": "apple_iphone_duo_fold_star_white_2026_animated",
+      "name": "iPhone Duo 2",
+      "model": "apple_iphone_duo_fold_star_white_2026_animated/scene.glb",
+      "screenMaterials": ["C_StarWhite_Screen_Inner", "C_SW_Screen_Outer"],
+      "author": "extraakash",
+      "source": "https://sketchfab.com/3d-models/apple-iphone-duo-fold-star-white-2026-animated-240492141edd4594ae13082a7fcbbb29",
+      "license": "Sketchfab Standard",
+      "permissionNote": "On 2026-09-12 the project owner confirmed express author permission for public GitHub hosting and distribution with this site. Not a general relicensing.",
+      "commercialUse": true,
+      "animation": { "clip": "open-close", "duration": 2, "fps": 30, "lastFrame": 60 }
+    },
+    {
       "id": "apple_ipad_pro",
       "name": "Apple iPad Pro",
       "model": "apple_ipad_pro/scene.glb",
