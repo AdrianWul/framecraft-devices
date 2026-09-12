@@ -89,7 +89,7 @@ when off and remembers the custom selection. Older projects keep their prior col
 The Mockup picker changes the device for every shot while retaining independent
 sources, camera, animation, colors, and effects. Older mixed-device projects ask
 before being converted to one device; cancelling leaves the current project intact.
-Mockup also includes iPhone 18 Pro Max and MacBook Pro, with bundled GLB assets,
+Mockup also includes iPhone 18 Pro Max and MacBook Pro, with GitHub-hosted GLB assets,
 source fitting, video support, and opt-in housing color. MacBook media replaces
 only its display, preserving the original keyboard, bezel, and camera notch.
 HDR reflections are prepared outside model drawing and kept independent per shot.
@@ -112,7 +112,13 @@ Choose iPhone Duo 2 (marked with a clapperboard) in Mockup to scrub its open-clo
 (0-60). Record keyframes on the Mockup track; easing, resets, trim/reorder,
 project save/load, PNG, and WebM retain the same shot-local animation.
 Primary edits the inner screen; secondary edits the outer screen.
-The bundled `devices` folder must remain alongside `index.html`.
+This repository hosts all seven device models in `devices`, with cross-origin
+access through GitHub Pages. Keep these assets, original model metadata and
+permissions in the repository. All app builds use this library by default;
+uploads to other static hosts do not need another copy of the GLB files.
+The public upload ZIP places `index.html`, icons and credits directly at its
+root. No backend is needed. Restricted browser storage does not prevent the
+editor or Tutorial from opening; preferences then apply to the current visit.
 
 The Fold model is [Apple iPhone Duo Fold Star White 2026 (Animated)](https://sketchfab.com/3d-models/apple-iphone-duo-fold-star-white-2026-animated-240492141edd4594ae13082a7fcbbb29)
 by [extraakash](https://sketchfab.com/AakashMansukhani).
