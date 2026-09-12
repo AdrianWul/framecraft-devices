@@ -12,6 +12,7 @@ Special thanks to **Jordan Jimenez**
 - Independent screen flip, rotation, fit, and scale adjustments.
 - Camera, lighting, transform, and depth-of-field animation.
 - Movable and resizable timeline clips and grouped keyframes.
+- Responsive controls with a mobile inspector menu and persistent keyframe recording access.
 - Image and WebM export.
 - Portable `.framecraft.json` project save files with embedded media.
 
