@@ -72,6 +72,10 @@ when off and remembers the custom selection. Older projects keep their prior col
 The Mockup picker changes the device for every shot while retaining independent
 sources, camera, animation, colors, and effects. Older mixed-device projects ask
 before being converted to one device; cancelling leaves the current project intact.
+Mockup also includes iPhone 18 Pro Max and MacBook Pro, with bundled GLB assets,
+source fitting, video support, and opt-in housing color. MacBook media replaces
+only its display, preserving the original keyboard, bezel, and camera notch.
+HDR reflections are prepared outside model drawing and kept independent per shot.
 Model attributions live in the Model credits link below the inspector.
 Keep `device-credits.html` alongside the other site files.
 Import media from Source and choose presets through Auto-motion; the duplicate

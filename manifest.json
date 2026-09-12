@@ -3,6 +3,29 @@
   "baseUrl": "https://adrianwul.github.io/framecraft-devices/devices/",
   "devices": [
     {
+      "id": "apple_iphone_18_pro_max_burgundy_2026",
+      "name": "iPhone 18 Pro Max",
+      "model": "apple_iphone_18_pro_max_burgundy_2026/scene.glb",
+      "screenMaterials": ["COLOUR_Cherry_Screen"],
+      "author": "extraakash",
+      "source": "https://sketchfab.com/3d-models/apple-iphone-18-pro-max-burgundy-2026-604acc18b5d5455d820a16359b45b003",
+      "license": "Sketchfab Standard",
+      "permissionNote": "On 2026-09-12 the project owner confirmed express author permission for public GitHub hosting and distribution with this site. Not a general relicensing.",
+      "commercialUse": true
+    },
+    {
+      "id": "apple_macbook_pro",
+      "name": "MacBook Pro",
+      "model": "apple_macbook_pro/scene.glb",
+      "screenMaterials": ["macbookpro"],
+      "screenBinding": "Front-facing display geometry and rounded UV atlas mask; preserves housing, keyboard, bezel and camera notch.",
+      "author": "Andrey 3D",
+      "source": "https://sketchfab.com/3d-models/apple-macbook-pro-eddf60ccdaba497c9e256e64bd0946d9",
+      "license": "Sketchfab Standard",
+      "permissionNote": "On 2026-09-12 the project owner confirmed express author permission for public GitHub hosting and distribution with this site. Not a general relicensing.",
+      "commercialUse": true
+    },
+    {
       "id": "iphone_17_pro",
       "name": "iPhone 17 Pro",
       "model": "iphone_17_pro/scene.glb",
