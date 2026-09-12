@@ -18,8 +18,8 @@ Special thanks to **Jordan Jimenez**
 - Responsive controls with a categorized, animated mobile workspace that keeps the canvas visible.
 - Seven-step interactive tutorial covering setup, media, mockups, timeline animation, and export.
 - Pink-to-magenta animated stroke treatment on the Tutorial button.
-- Image export plus WebM video export fixed at 30 FPS.
-- Visible render progress and reused buffers during high-resolution video capture.
+- Image export plus WebM video export at 30 FPS, with 60 FPS enabled only for detected 60 FPS sources.
+- Visible render progress during WebM video capture.
 - Portable `.framecraft.json` project save files with embedded media.
 
 ## Using the editor
