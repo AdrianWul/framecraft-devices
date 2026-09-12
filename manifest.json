@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "baseUrl": "https://adrianwul.github.io/framecraft-devices/devices/",
+  "devices": [
+    {
+      "id": "iphone_17_pro",
+      "name": "iPhone 17 Pro",
+      "model": "iphone_17_pro/scene.glb",
+      "screenMaterials": ["Screen_BG"],
+      "author": "Ibrahim.Bhl",
+      "source": "https://sketchfab.com/3d-models/iphone-17-pro-4aeeeb41f9d14f96bb3f2589edc3edac",
+      "license": "CC-BY-4.0",
+      "commercialUse": true
+    },
+    {
+      "id": "apple_iphone_duo",
+      "name": "Apple iPhone Duo",
+      "model": "apple_iphone_duo/scene.glb",
+      "screenMaterials": ["Screen.001", "Screen.002"],
+      "author": "zhe_kan",
+      "source": "https://sketchfab.com/3d-models/apple-iphone-duo-f6100910553946159e07518240fca910",
+      "license": "CC-BY-NC-SA-4.0",
+      "commercialUse": false
+    },
+    {
+      "id": "apple_ipad_pro",
+      "name": "Apple iPad Pro",
+      "model": "apple_ipad_pro/scene.glb",
+      "screenMaterials": ["screen"],
+      "author": "DatSketch",
+      "source": "https://sketchfab.com/3d-models/apple-ipad-pro-e5ffb3c80b2d4d6690249f8ee2bdafbe",
+      "license": "CC-BY-NC-4.0",
+      "commercialUse": false
+    },
+    {
+      "id": "free_mac_book_pro",
+      "name": "MacBook Pro",
+      "model": "free_mac_book_pro/scene.glb",
+      "screenMaterials": ["screen"],
+      "author": "Imagigoo",
+      "source": "https://sketchfab.com/3d-models/free-mac-book-pro-laptop-344a472d2e3e45f9af68079fc0336d17",
+      "license": "CC-BY-4.0",
+      "commercialUse": true
+    }
+  ]
+}
