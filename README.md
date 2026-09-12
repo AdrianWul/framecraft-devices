@@ -11,8 +11,9 @@ Special thanks to **Jordan Jimenez**
 - Image and video playback on device screens.
 - Independent screen flip, rotation, fit, and scale adjustments.
 - Camera, lighting, transform, and depth-of-field animation.
-- Movable and resizable timeline clips and grouped keyframes.
-- Per-transition easing presets and center snapping guides for camera positioning.
+- Movable and resizable timeline clips with grouped keyframes that expand into
+  individually selectable and retimeable property tracks.
+- Per-transition easing presets and soft, easy-release center snapping guides for camera positioning.
 - Responsive controls with a categorized, animated mobile workspace that keeps the canvas visible.
 - Seven-step interactive tutorial covering setup, media, mockups, timeline animation, and export.
 - Image export plus WebM and browser-supported MP4 video export at 30 or 60 FPS.
@@ -26,7 +27,8 @@ Special thanks to **Jordan Jimenez**
 4. Position the camera by dragging the canvas, using Space + drag to pan, and
    scrolling to zoom.
 5. Add keyframes from the inspector or the Camera, Lighting, and Depth of field
-   lanes in the timeline.
+   lanes in the timeline. Select a group lane to expand its individual property
+   keyframes; selecting another track collapses the previous one.
 6. Use the save icon to download a `.framecraft.json` project that can be opened
    again later.
 7. Use Export to render an image or WebM animation.
