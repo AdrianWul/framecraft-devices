@@ -14,7 +14,7 @@ Special thanks to **Jordan Jimenez**
 - Camera Rotate X control from -85° to 85° for dramatic but stable overhead and underside angles.
 - Movable and resizable timeline clips with an expandable Transform track for
   individually selectable and retimeable property keyframes.
-- Per-transition easing presets and soft, easy-release center snapping guides for camera positioning.
+- Per-transition easing presets and non-magnetic visual guides for camera positioning.
 - Responsive controls with a categorized, animated mobile workspace that keeps the canvas visible.
 - Seven-step interactive tutorial covering setup, media, mockups, timeline animation, and export.
 - Pink-to-magenta animated stroke treatment on the Tutorial button.
@@ -67,6 +67,11 @@ Effects opens in the right inspector; Devices restores the device controls.
 Click the toolbar Effects icon again to return to Devices.
 Camera keeps Distance and Zoom; FOV is no longer a visible slider. Existing
 project FOV values/keyframes are preserved, including by camera slider resets.
+Canvas pan retains its full 3D target without magnetic snapping. Wheel/trackpad
+zoom follows movement size and stays anchored under the pointer. Pan depth is
+saved and recorded; old projects default it to zero and camera resets clear it.
+Keyframe connections are thin orange lines matching the easing hover color,
+with gaps around the markers and compact easing button.
 Device color is opt-in for new scenes. Its toggle restores original shader colors
 when off and remembers the custom selection. Older projects keep their prior colors.
 The Mockup picker changes the device for every shot while retaining independent
