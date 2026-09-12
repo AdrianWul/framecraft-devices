@@ -17,6 +17,7 @@ Special thanks to **Jordan Jimenez**
 - Per-transition easing presets and soft, easy-release center snapping guides for camera positioning.
 - Responsive controls with a categorized, animated mobile workspace that keeps the canvas visible.
 - Seven-step interactive tutorial covering setup, media, mockups, timeline animation, and export.
+- Pink-to-magenta animated stroke treatment on the Tutorial button.
 - Image export plus WebM and browser-supported MP4 video export at 30 or 60 FPS.
 - Portable `.framecraft.json` project save files with embedded media.
 
