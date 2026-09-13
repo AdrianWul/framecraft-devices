@@ -99,7 +99,8 @@ Keys retain their spacing and easing and cannot overwrite unselected neighbors.
 The magnet toggles playhead snapping to keyframes (off by default); keyboard seeking
 remains precise. Retimed keys are included in saved projects and exports.
 Model attributions live in the Model credits link below the inspector.
-Keep `device-credits.html` alongside the other site files.
+Keep `device-credits.html` in this repository. All app builds link to this hosted
+credits page; other hosts do not need another copy.
 Import media from Source and choose presets through Auto-motion; the duplicate
 Media and Presets buttons have been removed.
 The grid button beside Effects toggles the resolution badge and movement hints.
@@ -116,9 +117,15 @@ This repository hosts all seven device models in `devices`, with cross-origin
 access through GitHub Pages. Keep these assets, original model metadata and
 permissions in the repository. All app builds use this library by default;
 uploads to other static hosts do not need another copy of the GLB files.
-The public upload ZIP places `index.html`, icons and credits directly at its
-root. No backend is needed. Restricted browser storage does not prevent the
+The public upload ZIP places only `index.html` and icons directly at its
+root, without README or local credits files. No backend is needed. Restricted browser storage does not prevent the
 editor or Tutorial from opening; preferences then apply to the current visit.
+
+Failed model/HDR downloads now leave the editor visible with resource details
+and Reload preview. Retry clears failed loader entries without replacing the
+project. JSON saving remains available; image/video export is blocked until
+the preview recovers. Static startup diagnostics identify an editor that has
+not started when JavaScript is blocked; they do not replace a working editor.
 
 The Fold model is [Apple iPhone Duo Fold Star White 2026 (Animated)](https://sketchfab.com/3d-models/apple-iphone-duo-fold-star-white-2026-animated-240492141edd4594ae13082a7fcbbb29)
 by [extraakash](https://sketchfab.com/AakashMansukhani).
