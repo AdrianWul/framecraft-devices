@@ -16,7 +16,7 @@ Special thanks to **Jordan Jimenez**
   individually selectable and retimeable property keyframes.
 - Per-transition easing presets and non-magnetic visual guides for camera positioning.
 - Responsive controls with a categorized, animated mobile workspace that keeps the canvas visible.
-- Seven-step interactive tutorial covering setup, media, mockups, timeline animation, and export.
+- Interactive tutorial covering setup, media editing, mockups, timeline animation, and export.
 - Pink-to-magenta animated stroke treatment on the Tutorial button.
 - Image export plus WebM video export at 30 FPS, with 60 FPS enabled only for detected 60 FPS sources.
 - Frame-by-frame WebM rendering with fixed timestamps, completed-frame progress, and cancellation.
@@ -27,6 +27,45 @@ Special thanks to **Jordan Jimenez**
 - One shared WebGL renderer across shots, with context-loss notification and preview recovery.
 - Geometry-aware iPhone Duo screen fitting and isolated device housing finish materials.
 - Portable `.framecraft.json` project save files with embedded media.
+- Compact screen-media editor with animated progressive blur, rotation, and reversible edits.
+- Optional planar floor reflection and 28 static background presets.
+
+## September 14, 2026 release
+
+**Edit media**, below Effects, opens for both the default screen image and imported
+images/videos. The compact inspector uses the main editor's sliders and a single
+shot-synchronized track with draggable keys and the same floating Bezier editor.
+Progressive blur supports four directions, position, strength and softness;
+media rotation is additional to the existing screen adjustments.
+
+The solid position line and dashed softness boundaries are draggable in Source
+view, which shows the image before rotation/flips/scale. On device shows the final
+result. Guides never appear in exports. Primary and secondary screens keep
+independent settings, animation and media.
+
+Changes are previewed live: **Done** applies them, while **Cancel** discards the
+session's media edits and restores its original values/keyframes. Dismissing the
+dialog also cancels; Escape cancels an active gesture or closes the easing editor
+before dismissing the dialog. Done has a green/purple hover stroke that respects
+reduced motion. The tutorial includes the media editor.
+
+**Reflection** is an optional planar 3D floor effect in Effects. It follows the
+device, media and camera, remains local to each shot, and is included in still
+and frame-by-frame WebM exports. It is disabled by default.
+
+Background now has **28 static presets**, retaining the original ten. There is
+no animated background option. Intermediate experimental animated backgrounds
+are migrated to their static colors with an explicit notice.
+
+New saves use project format **4** to preserve screen-media animation and reflection.
+Versions 1 through 3 still open; older app builds cannot open format-4 projects.
+Keep separate copies when experimenting or returning to an older version.
+Updates identifies this release as `2026-09-14-framecraft-v2-static`.
+
+For other static hosts, upload the prepared **Framecraft-Vibehub.zip** directly,
+without recompressing its folder: `index.html`, `favicon.svg`, and `icons.svg`
+are at the archive root. The upload contains no local models, credits page or
+README; models and credits remain hosted here on GitHub Pages.
 
 ## Using the editor
 
@@ -98,9 +137,9 @@ Shift/Ctrl/Cmd-click toggles selection, Delete removes it, and Escape cancels a 
 Keys retain their spacing and easing and cannot overwrite unselected neighbors.
 The magnet toggles playhead snapping to keyframes (off by default); keyboard seeking
 remains precise. Retimed keys are included in saved projects and exports.
-Model attributions live in the Model credits link below the inspector.
-Keep `device-credits.html` in this repository. All app builds link to this hosted
-credits page; other hosts do not need another copy.
+Model attributions are preserved in `device-credits.html` in this repository,
+along with original model metadata and licenses. The editor no longer displays
+a Model credits link; other hosts do not need another copy of the credits page.
 Import media from Source and choose presets through Auto-motion; the duplicate
 Media and Presets buttons have been removed.
 The grid button beside Effects toggles the resolution badge and movement hints.
@@ -160,8 +199,8 @@ current shot-local time, preserving other keys and existing easing. Unanimated
 controls return to their base defaults without adding keys unless recording.
 Reset All leaves the device finish, HDR, focus shape, and other shots unchanged.
 
-Projects now save as version 2 with all shot scenes and embedded media.
-Version 1 files are migrated on load. Moving a shot carries its local keyframes;
+Projects now save as version 4 with all shot scenes and embedded media.
+Versions 1 through 3 are migrated on load. Moving a shot carries its local keyframes;
 each outgoing shot's transition button selects a cut or a half-second dissolve
 at the next shot's start without shortening either shot.
 
