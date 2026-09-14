@@ -32,6 +32,18 @@ Special thanks to **Jordan Jimenez**
 
 ## September 14, 2026 release
 
+The startup screen and device preview include a green-purple loading ring.
+The composition is temporarily blurred while visible models, HDR lighting or
+screen media load; the overlay ends after the first complete rendered frame.
+Inactive preloads do not keep the editor busy. Slow loads show a retry hint
+after 15 seconds; failures retain explicit error details instead of a spinner.
+
+**Refresh preview**, at the right of the editor toolbar, reloads only the 3D
+view and its visible assets. It preserves media, shot settings, camera, playhead
+and keyframes, and pauses playback. It is disabled during video export.
+Exports cannot start while the preview is loading; the loading overlay/blur
+never appears in exports. Reduced motion keeps the gradient ring static.
+
 **Edit media**, below Effects, opens for both the default screen image and imported
 images/videos. The compact inspector uses the main editor's sliders and a single
 shot-synchronized track with draggable keys and the same floating Bezier editor.
@@ -60,7 +72,7 @@ are migrated to their static colors with an explicit notice.
 New saves use project format **4** to preserve screen-media animation and reflection.
 Versions 1 through 3 still open; older app builds cannot open format-4 projects.
 Keep separate copies when experimenting or returning to an older version.
-Updates identifies this release as `2026-09-14-framecraft-v2-static`.
+Updates identifies this release as `2026-09-14-preview-loading`.
 
 For other static hosts, upload the prepared **Framecraft-Vibehub.zip** directly,
 without recompressing its folder: `index.html`, `favicon.svg`, and `icons.svg`
