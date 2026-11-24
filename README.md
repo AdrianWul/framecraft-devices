@@ -91,6 +91,12 @@ HDR reflections without changing the camera glass or original model materials. T
 non-commercial use only. Original attribution is retained in the GLB and
 `devices/google_pixel_10a/license.txt`.
 
+The editor centers device rotation on the model, preserving framing after pan or
+cursor zoom. Pixel and iPhone 18 use their chassis centers rather than camera
+protrusions. Tablet is centered without the Pencil and supports the same optional
+**Screen glass** checkbox as Pixel and iPhone 18. Tablet cleanup is applied to an
+owned editor mesh; original library geometry and attribution remain unchanged.
+
 1. Select a device from the Mockup section.
 2. Load a PNG, JPG, WebP, MP4, or WebM file.
 3. Adjust the screen orientation with Flip H, Flip V, Rotate, and Screen Scale.
