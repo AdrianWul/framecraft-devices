@@ -97,6 +97,11 @@ protrusions. Tablet is centered without the Pencil and supports the same optiona
 **Screen glass** checkbox as Pixel and iPhone 18. Tablet cleanup is applied to an
 owned editor mesh; original library geometry and attribution remain unchanged.
 
+**HDR blur**, under Lighting, softens HDR reflections from 0 to 100% independently
+for each shot, with undo, reset, project persistence and image/video export.
+Older projects retain their original 0% blur. **QHD** in Export > Resolution adds
+2560 × 1440 images and video and switches the canvas to the matching 16:9 aspect.
+
 1. Select a device from the Mockup section.
 2. Load a PNG, JPG, WebP, MP4, or WebM file.
 3. Adjust the screen orientation with Flip H, Flip V, Rotate, and Screen Scale.
