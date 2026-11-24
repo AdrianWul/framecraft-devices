@@ -1,0 +1,10 @@
+Google Pixel 10A
+Author: s12311061 (https://sketchfab.com/s12311061)
+Source: https://sketchfab.com/3d-models/google-pixel-10a-da2cfbe0418e4b97abba33e40893f276
+License: Creative Commons Attribution-NonCommercial 4.0 International
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Original attribution and license are retained in scene.glb asset.extras.
+Converted from the supplied glTF to self-contained GLB without changing geometry
+or textures. Framecraft adapts screen media, housing colors and placement at
+runtime. Non-commercial use only; no additional permissions are asserted.

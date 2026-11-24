@@ -3,6 +3,17 @@
   "baseUrl": "https://adrianwul.github.io/framecraft-devices/devices/",
   "devices": [
     {
+      "id": "google_pixel_10a",
+      "name": "Google Pixel 10a",
+      "model": "google_pixel_10a/scene.glb",
+      "screenMaterials": ["screen"],
+      "finishMaterials": ["base", "back_panel", "antenna"],
+      "author": "s12311061",
+      "source": "https://sketchfab.com/3d-models/google-pixel-10a-da2cfbe0418e4b97abba33e40893f276",
+      "license": "CC-BY-NC-4.0",
+      "commercialUse": false
+    },
+    {
       "id": "apple_iphone_18_pro_max_burgundy_2026",
       "name": "iPhone 18 Pro Max",
       "model": "apple_iphone_18_pro_max_burgundy_2026/scene.glb",

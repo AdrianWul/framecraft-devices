@@ -81,6 +81,14 @@ README; models and credits remain hosted here on GitHub Pages.
 
 ## Using the editor
 
+Google Pixel 10a is available in Mockup with image/video screen replacement,
+screen transforms, opt-in housing colors, project save/load and exports.
+Its `base`, `back_panel` and `antenna` materials are recolored independently of
+the screen, bezel, cameras and lenses. The model by
+[s12311061](https://sketchfab.com/s12311061) is **CC BY-NC 4.0**, for
+non-commercial use only. Original attribution is retained in the GLB and
+`devices/google_pixel_10a/license.txt`.
+
 1. Select a device from the Mockup section.
 2. Load a PNG, JPG, WebP, MP4, or WebM file.
 3. Adjust the screen orientation with Flip H, Flip V, Rotate, and Screen Scale.
@@ -164,7 +172,7 @@ Choose iPhone Duo 2 (marked with a clapperboard) in Mockup to scrub its open-clo
 (0-60). Record keyframes on the Mockup track; easing, resets, trim/reorder,
 project save/load, PNG, and WebM retain the same shot-local animation.
 Primary edits the inner screen; secondary edits the outer screen.
-This repository hosts all seven device models in `devices`, with cross-origin
+This repository hosts all eight device models in `devices`, with cross-origin
 access through GitHub Pages. Keep these assets, original model metadata and
 permissions in the repository. All app builds use this library by default;
 uploads to other static hosts do not need another copy of the GLB files.
