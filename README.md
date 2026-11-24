@@ -102,6 +102,13 @@ for each shot, with undo, reset, project persistence and image/video export.
 Older projects retain their original 0% blur. **QHD** in Export > Resolution adds
 2560 × 1440 images and video and switches the canvas to the matching 16:9 aspect.
 
+**HDR Rotation X/Y/Z** rotates the environment independently of the direct-light
+rig. **Light type > Area Lights** selects rectangular emitters; **Area light blur**
+softens their highlights by increasing source size at constant emitted power.
+HDR rotation and area-light softness support keyframes, undo, reset and exports.
+Older projects retain the original directional lights and zero HDR rotation.
+Area lights do not add ray-traced shadows; contact-shadow controls are unchanged.
+
 1. Select a device from the Mockup section.
 2. Load a PNG, JPG, WebP, MP4, or WebM file.
 3. Adjust the screen orientation with Flip H, Flip V, Rotate, and Screen Scale.
