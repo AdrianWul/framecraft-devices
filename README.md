@@ -84,7 +84,9 @@ README; models and credits remain hosted here on GitHub Pages.
 Google Pixel 10a is available in Mockup with image/video screen replacement,
 screen transforms, opt-in housing colors, project save/load and exports.
 Its `base`, `back_panel` and `antenna` materials are recolored independently of
-the screen, bezel, cameras and lenses. The model by
+the screen, bezel, cameras and lenses.
+The front display cover uses 4% opacity in the editor without changing the
+camera glass or the original model materials. The model by
 [s12311061](https://sketchfab.com/s12311061) is **CC BY-NC 4.0**, for
 non-commercial use only. Original attribution is retained in the GLB and
 `devices/google_pixel_10a/license.txt`.
