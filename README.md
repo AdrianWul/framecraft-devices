@@ -109,6 +109,12 @@ HDR rotation and area-light softness support keyframes, undo, reset and exports.
 Older projects retain the original directional lights and zero HDR rotation.
 Area lights do not add ray-traced shadows; contact-shadow controls are unchanged.
 
+**Transparent background** in Background is saved independently per shot. Its
+checkerboard appears only in the preview. Export transparent images as PNG/WebP
+and video as WebM with alpha, including QHD 2560 × 1440 at 16:9. JPG and MP4/H.264
+do not support alpha and are disabled for transparent exports. WebM alpha support
+varies by player/editor; browser export requires current Chrome or Edge.
+
 1. Select a device from the Mockup section.
 2. Load a PNG, JPG, WebP, MP4, or WebM file.
 3. Adjust the screen orientation with Flip H, Flip V, Rotate, and Screen Scale.
