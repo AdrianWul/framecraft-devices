@@ -119,6 +119,11 @@ Depth blur also works with transparent backgrounds: the alpha-aware render pass
 replaces sharp pixels and softens both color and alpha edges in preview and export.
 Focus shape, feather and animation remain available.
 
+Depth sliders and numeric fields remain editable between existing keyframes:
+edits pause playback and update the animated channel at the current shot-local
+time without replacing neighboring keys. Unanimated channels remain unkeyed
+unless recording is enabled.
+
 1. Select a device from the Mockup section.
 2. Load a PNG, JPG, WebP, MP4, or WebM file.
 3. Adjust the screen orientation with Flip H, Flip V, Rotate, and Screen Scale.
