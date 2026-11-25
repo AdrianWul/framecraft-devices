@@ -115,6 +115,10 @@ and video as WebM with alpha, including QHD 2560 × 1440 at 16:9. JPG and MP4/H.
 do not support alpha and are disabled for transparent exports. WebM alpha support
 varies by player/editor; browser export requires current Chrome or Edge.
 
+Depth blur also works with transparent backgrounds: the alpha-aware render pass
+replaces sharp pixels and softens both color and alpha edges in preview and export.
+Focus shape, feather and animation remain available.
+
 1. Select a device from the Mockup section.
 2. Load a PNG, JPG, WebP, MP4, or WebM file.
 3. Adjust the screen orientation with Flip H, Flip V, Rotate, and Screen Scale.
